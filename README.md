@@ -1,5 +1,21 @@
 ## Real‑Time Hair Simulation and Rendering System
 
+### Run the project
+
+1. Prerequisites
+- Python 3.13 or higher: Ensure you have the latest stable version of Python installed.
+- uv: This project uses uv for extremely fast dependency management.
+
+2. Environment Setup
+You don't need to manually create a virtual environment, uv will handle it. To sync dependencies defined in the `pyproject.toml`.
+
+`uv sync`
+
+3. Running the Simulation
+The project is designed to be executed as a script. Run the following command from the root directory:
+
+`uv run ./main.py`
+
 ### Overview
 
 This project implements a real‑time, physically based hair simulation and rendering system for long hair attached to a deforming head mesh. The system focuses on physical plausibility, numerical stability and real‑time performance, while remaining fully interactive through a Qt user interface.
