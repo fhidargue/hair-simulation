@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_widget</class>
+ <widget class="QWidget" name="main_widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>748</width>
+    <height>558</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" columnstretch="1,0,0">
+   <item row="0" column="2" rowspan="2">
+    <layout class="QVBoxLayout" name="right_panel">
+     <property name="spacing">
+      <number>8</number>
+     </property>
+     <item>
+      <widget class="QGroupBox" name="hair_controls">
+       <property name="title">
+        <string>Hair Controls</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_hair_strand_count">
+          <property name="text">
+           <string>Strand Count</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="hair_strand_count">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>8000</number>
+          </property>
+          <property name="value">
+           <number>1000</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_hair_style">
+          <property name="text">
+           <string>Style</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="hair_style"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_hair_length">
+          <property name="text">
+           <string>Length</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="hair_length">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="value">
+           <number>25</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_hair_thickness">
+          <property name="text">
+           <string>Thickness</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="hair_thickness">
+          <property name="minimum">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <number>50</number>
+          </property>
+          <property name="pageStep">
+           <number>0</number>
+          </property>
+          <property name="value">
+           <number>20</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_hair_density">
+          <property name="text">
+           <string>Density</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="hair_density">
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_hair_color">
+          <property name="text">
+           <string>Color</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="RGBColourWidget" name="hair_color" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="force_controls">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="title">
+        <string>Extra Controls</string>
+       </property>
+       <layout class="QVBoxLayout" name="force_layout">
+        <item>
+         <widget class="QCheckBox" name="activate_wind">
+          <property name="text">
+           <string>Activate Wind</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="show_ellipsoids">
+          <property name="text">
+           <string>Show Ellipsoids</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="right_panel_spacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0" rowspan="2" colspan="2">
+    <widget class="QWidget" name="scene_container" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RGBColourWidget</class>
+   <extends>QWidget</extends>
+   <header>rgbcolourwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

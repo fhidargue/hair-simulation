@@ -1,0 +1,18 @@
+[project]
+name = "aseassignment25-26-fhidargue"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ncca-ngl>=0.3.4",
+    "pillow>=12.0.0",
+    "pygltflib>=1.16.5",
+    "scipy>=1.16.3",
+    "trimesh>=4.10.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
